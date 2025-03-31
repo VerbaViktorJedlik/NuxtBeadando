@@ -1,0 +1,104 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2018,
+      "price": 15000,
+      "mileage": 45000,
+      "fuelType": "Gasoline",
+      "transmission": "Manual",
+      "description": "Well-maintained Toyota Corolla with low mileage. Fuel-efficient and reliable.",
+      "sellerName": "John Smith",
+      "sellerContact": "john.smith@example.com",
+      "images": [
+        "toyota-corolla-1.jpg",
+        "toyota-corolla-2.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2019,
+      "price": 17500,
+      "mileage": 35000,
+      "fuelType": "Gasoline",
+      "transmission": "Automatic",
+      "description": "Honda Civic in excellent condition. Regular service history available.",
+      "sellerName": "Emma Johnson",
+      "sellerContact": "emma.j@example.com",
+      "images": [
+        "honda-civic-1.jpg",
+        "honda-civic-2.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "year": 2017,
+      "price": 14000,
+      "mileage": 60000,
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "description": "Volkswagen Golf with great fuel economy. Perfect family car.",
+      "sellerName": "Michael Brown",
+      "sellerContact": "m.brown@example.com",
+      "images": [
+        "vw-golf-1.jpg",
+        "vw-golf-2.jpg"
+      ]
+    },
+    {
+      "id": "4",
+      "make": "Ford",
+      "model": "Focus",
+      "year": 2020,
+      "price": 18500,
+      "mileage": 25000,
+      "fuelType": "Gasoline",
+      "transmission": "Automatic",
+      "description": "Nearly new Ford Focus with all modern features. Great condition.",
+      "sellerName": "Sarah Wilson",
+      "sellerContact": "s.wilson@example.com",
+      "images": [
+        "ford-focus-1.jpg",
+        "ford-focus-2.jpg"
+      ]
+    },
+    {
+      "id": "5",
+      "make": "BMW",
+      "model": "3 Series",
+      "year": 2016,
+      "price": 22000,
+      "mileage": 70000,
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "description": "BMW 3 Series with premium features and comfortable interior.",
+      "sellerName": "David Martin",
+      "sellerContact": "d.martin@example.com",
+      "images": [
+        "bmw-3-1.jpg",
+        "bmw-3-2.jpg"
+      ]
+    },
+    {
+      "id": "c3d2",
+      "make": "Citroen",
+      "model": "C4",
+      "year": 2025,
+      "price": 123131,
+      "mileage": 123123123,
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "description": "sdfsdf",
+      "sellerName": "sdfsdf",
+      "sellerContact": "54654",
+      "images": []
+    }
+  ],
+  "inquiries": []
+}
