@@ -45,7 +45,7 @@ export const useCarStore = defineStore('cars', {
       this.loading = true;
       try {
         const config = useRuntimeConfig();
-        const response = await axios.get(`${config.public.apiBase}/cars`);
+        const response = await axios.get<Car[]>(`${config.public.apiBase}/cars`);
         this.cars = response.data;
         this.error = null;
       } catch (error: any) {
@@ -55,22 +55,7 @@ export const useCarStore = defineStore('cars', {
         this.loading = false;
       }
     },
-    
-    async fetchCarById(id: number) {
-      this.loading = true;
-      try {
-        const config = useRuntimeConfig();
-        const response = await axios.get(`${config.public.apiBase}/cars/${id}`);
-        this.selectedCar = response.data;
-        this.error = null;
-      } catch (error: any) {
-        this.error = error.message;
-        console.error(`Error fetching car with ID ${id}:`, error);
-      } finally {
-        this.loading = false;
-      }
-    },
-    
+
     async addCar(newCar: Omit<Car, 'id'>) {
       this.loading = true;
       try {

@@ -43,7 +43,6 @@
         </q-card-section>
         
         <q-card-section>
-          <!-- Price and Mileage -->
           <div class="row q-col-gutter-md">
             <div class="col-12 col-md-6">
               <q-input 
@@ -81,7 +80,6 @@
         </q-card-section>
         
         <q-card-section>
-          <!-- Additional Details -->
           <div class="row q-col-gutter-md">
             <div class="col-12 col-md-6">
               <q-select 
@@ -116,7 +114,6 @@
         </q-card-section>
         
         <q-card-section>
-          <!-- Contact Information -->
           <div class="row q-col-gutter-md">
             <div class="col-12 col-md-6">
               <q-input 
@@ -204,12 +201,10 @@ function resetForm() {
 function onSubmit() {
   submitting.value = true;
   
-  // Simulate API call
   setTimeout(() => {
     submitting.value = false;
     showSuccess.value = true;
     
-    // Uncomment to use actual store when ready
     carStore.addCar(form.value)
       .then(() => {
         submitting.value = false;
@@ -217,7 +212,6 @@ function onSubmit() {
       })
       .catch(err => {
         submitting.value = false;
-        // Handle error
       });
   }, 1000);
 }

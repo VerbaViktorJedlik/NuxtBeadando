@@ -13,12 +13,10 @@
       </div>
     </div>
     
-    <!-- Loading State -->
     <div v-if="loading" class="flex flex-center q-pa-xl">
       <q-spinner color="primary" size="3em" />
     </div>
     
-    <!-- Error State -->
     <div v-else-if="error" class="text-negative">
       {{ error }}
     </div>
@@ -76,53 +74,8 @@ const search = ref('');
 const loading = ref(true);
 const error = ref(null);
 
-// Sample data for demonstration
-// const cars = ref([
-//   {
-//     id: 1,
-//     make: 'Toyota',
-//     model: 'Camry',
-//     year: 2019,
-//     price: 15000,
-//     mileage: 45000,
-//     fuelType: 'Gasoline',
-//     transmission: 'Automatic',
-//     image: 'https://placehold.co/600x400?text=Toyota+Camry'
-//   },
-//   {
-//     id: 2,
-//     make: 'Honda',
-//     model: 'Civic',
-//     year: 2018,
-//     price: 12500,
-//     mileage: 55000,
-//     fuelType: 'Gasoline',
-//     transmission: 'Manual',
-//     image: 'https://placehold.co/600x400?text=Honda+Civic'
-//   },
-//   {
-//     id: 3,
-//     make: 'Ford',
-//     model: 'F-150',
-//     year: 2020,
-//     price: 25000,
-//     mileage: 35000,
-//     fuelType: 'Diesel',
-//     transmission: 'Automatic',
-//     image: 'https://placehold.co/600x400?text=Ford+F-150'
-//   },
-//   {
-//     id: 4,
-//     make: 'BMW',
-//     model: '3 Series',
-//     year: 2017,
-//     price: 19500,
-//     mileage: 62000,
-//     fuelType: 'Gasoline',
-//     transmission: 'Automatic',
-//     image: 'https://placehold.co/600x400?text=BMW+3+Series'
-//   }
-// ]);
+const cars = computed(() => carStore.cars);
+
 
 const filteredCars = computed(() => {
   if (!search.value) return cars.value;
@@ -137,10 +90,8 @@ const filteredCars = computed(() => {
 });
 
 onMounted(() => {
-  // Simulate API call
   setTimeout(() => {
     loading.value = false;
-    // Uncomment below to use actual store data when ready
     carStore.fetchCars()
       .then(() => {
         loading.value = false;

@@ -86,17 +86,17 @@
       ]
     },
     {
-      "id": "c3d2",
+      "id": "5b66",
       "make": "Citroen",
       "model": "C4",
       "year": 2025,
-      "price": 123131,
-      "mileage": 123123123,
+      "price": 456456,
+      "mileage": 1231456,
       "fuelType": "Diesel",
       "transmission": "Manual",
-      "description": "sdfsdf",
-      "sellerName": "sdfsdf",
-      "sellerContact": "54654",
+      "description": "2. owner",
+      "sellerName": "Viktor",
+      "sellerContact": "asdf@gmail.com",
       "images": []
     }
   ],
